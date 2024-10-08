@@ -194,7 +194,7 @@ alert (resultLoan);
 
 
 
-// 9- Kullanıcı Adı ve Şifre Kontrolü:
+// 9- Kullanıcı Adı ve Şifre Kontrolü.:
 // Kullanıcıdan hem kullanıcı adını hem de şifresini alın. Eğer kullanıcı adı "admin" ve şifre "1234" ise “Giriş başarılı” mesajı verin, aksi halde “Kullanıcı adı veya şifre hatalı” deyin.
 
 
