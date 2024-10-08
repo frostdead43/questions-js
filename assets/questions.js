@@ -156,7 +156,7 @@ localStorage.setItem("question5", `${convertHour} ${convertMinute} ${convertSeco
     let thisMonth = new Date().getMonth();
     thisMonth +=1  // index 0 = January so i added +1 and make them equal to 1 
 
-    let thisDay = new Date().getDay();  //index 0 = Sunday so i didn't change this index
+    let thisDay = new Date().getDate();   //index 0 = Sunday so i didn't change this index
 
 
     let totalYear = (thisYear-birthYear);
@@ -165,16 +165,17 @@ localStorage.setItem("question5", `${convertHour} ${convertMinute} ${convertSeco
 
     let totalDay = thisDay- birthDay;
 
-    if (birthMonth < thisMonth) {
-        thisYear -=1;
+    if (totalMonth < 0) {
+        totalYear -=1;
+        totalMonth +=12;
         
     } else(thisYear === thisYear);
     
 
-    if (birthDay < thisDay) {
-        birthDay % 30;  
+    if (totalDay < 0) {
         thisMonth -=1;
-    } else (thisMonth === thisMonth);
+        totalDay += 30;
+    } 
 
     totalResult = (totalYear  + " " + totalMonth + " " +  totalDay);
 
