@@ -19,6 +19,8 @@ if (lastPrice !== 0) {
     alert("0 or invalid!");
 }
 
+localStorage.setItem("question1", `${lastPrice}`);
+
 
 
 
